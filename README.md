@@ -48,6 +48,9 @@ the same thing.
 
 When in normal mode, '/' would allow you to search for a particular window by matching on the window title. When in insert mode, Win-/ does
 the same thing. 
-__In general, anything you could do in normal mode can be done in insert mode by prepending the corresponding normal keys with Win modifier__  
+
+__In general, anything you could do in normal mode can be done in insert mode by prepending the corresponding normal keys with Win modifier__
+This would make the keybindings very easy to remember.
+
 ## You exit the "Normal" mode and enter the "Insert" mode by pressing *Enter* on a currently selected window. ##
 
