@@ -42,6 +42,12 @@ the same thing.
 
 When in normal mode, 'z' would zoom in/out (it is a zoom toggle) the currently focused window. When in insert mode, Win-z does
 the same thing. 
+
+When in normal mode, ' ' (*Space*) would activate dmenu to run aplications When in insert mode, Win-*Space* does
+the same thing. 
+
+When in normal mode, '/' would allow you to search for a particular window by matching on the window title. When in insert mode, Win-/ does
+the same thing. 
   
 ## You exit the "Normal" mode and enter the "Insert" mode by pressing *Enter* on a currently selected window. ##
 
