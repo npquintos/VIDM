@@ -11,7 +11,7 @@ Display Manager inspired by vim/tmux, a fork of DWM by Suckless.org
 # Why fork DWM?
 DWM uses Alt as modifier and many application uses Alt to access the menu. I believe this will create a lot of conflicts.
 I also find the key bindings of DWM hard to remember. While I could simply modify conf.h to suit my preferred keybindings,
-there are additional funcionalities that I wish to include namely:
+there are additional functionalities that I wish to include namely:
 
 ## "Normal" mode that will apply to windows
 ## You go into *Normal* mode by pressing Alt-TAB, which also simultaneously select the previously selected window. ##
@@ -48,6 +48,6 @@ the same thing.
 
 When in normal mode, '/' would allow you to search for a particular window by matching on the window title. When in insert mode, Win-/ does
 the same thing. 
-  
+__In general, anything you could do in normal mode can be done in insert mode by prepending the corresponding normal keys with Win modifier__  
 ## You exit the "Normal" mode and enter the "Insert" mode by pressing *Enter* on a currently selected window. ##
 
