@@ -27,12 +27,14 @@ easier to remember. You could access the same functionality while
 in "Insert" mode but using the windows button in addition to Shift-jklh
 
 When in normal mode, you could "mark" windows using 'm', just like in vim. Any window that are marked together goes to the same
-*unused* workspace (or tags in DWM). <Enter> should be pressed when finished 'marking'; <Esc> to erase marked windows.
+*unused* workspace (or tags in DWM). *Enter* should be pressed when finished 'marking'; *Esc* to erase marked windows.
   
 When in normal mode, <TAB> would cycle you through the different workspace (or tags in DWM). When in insert mode, Win-Tab does
 the same thing.
   
-When in normal mode, 's' would cycle you through the different 'screens' (or monitor). When in insert mode, Win-x does
+When in normal mode, Win-x would delete the current workspace or tag. Ctrl-Win-x would accomplish same thing when in Insert mode
+  
+When in normal mode, 's' would cycle you through the different 'screens' (or monitor). When in insert mode, Win-s does
 the same thing.
   
 When in normal mode, 'x' would exit/close (or delete as in vim) currently focused windows. When in insert mode, Win-x does
@@ -41,5 +43,5 @@ the same thing.
 When in normal mode, 'z' would zoom in/out (it is a zoom toggle) the currently focused window. When in insert mode, Win-z does
 the same thing. 
   
-## You exit the "Normal" mode and enter the "Insert" mode by pressing <Enter> on a currently selected window. ##
+## You exit the "Normal" mode and enter the "Insert" mode by pressing *Enter* on a currently selected window. ##
 
