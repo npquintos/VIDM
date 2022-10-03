@@ -14,7 +14,7 @@ I also find the key bindings of DWM hard to remember. While I could simply modif
 there are additional funcionalities that I wish to include namely:
 
 ## "Normal" mode that will apply to windows
-##You go into *Normal* mode by pressing Alt-TAB, which also simultaneously select the previously selected window.##
+## You go into *Normal* mode by pressing Alt-TAB, which also simultaneously select the previously selected window. ##
 
 When in normal mode, jklh will move between windows without modifier. You could access the same functionality while
 in "Insert" mode but using the windows button in addition to jklh
