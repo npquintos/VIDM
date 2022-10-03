@@ -29,7 +29,7 @@ in "Insert" mode but using the windows button in addition to Shift-jklh
 When in normal mode, you could "mark" windows using 'm', just like in vim. Any window that are marked together goes to the same
 *unused* workspace (or tags in DWM). *Enter* should be pressed when finished 'marking'; *Esc* to erase marked windows.
   
-When in normal mode, <TAB> would cycle you through the different workspace (or tags in DWM). When in insert mode, Win-Tab does
+When in normal mode, *TAB* would cycle you through the different workspace (or tags in DWM). When in insert mode, Win-Tab does
 the same thing.
   
 When in normal mode, Win-x would delete the current workspace or tag. Ctrl-Win-x would accomplish same thing when in Insert mode
