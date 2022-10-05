@@ -66,15 +66,15 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } }, /* focus to next window */
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } }, /* focus to previous window */
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
+	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } }, /* not useful */
+	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } }, /* not useful */
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} }, /*  resize left */
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} }, /*  resize right */
 	{ MODKEY,                       XK_Return, zoom,           {0} }, /* not useful */
 	{ MODKEY,                       XK_Tab,    view,           {0} }, /* not useful */
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} }, /* close window */
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} }, /* minimize or expose */
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} }, /* tile layoutb minimize or expose */
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} }, /* float layout  */
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} }, /* maximize window */
 	{ MODKEY,                       XK_space,  setlayout,      {0} }, /* not useful */
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} }, /* not useful */
