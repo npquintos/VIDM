@@ -66,14 +66,14 @@ static Key keys[] = {
 	{ MODKEY,                       XK_space,  spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_t,      spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
-	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
-	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } },
-	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
-	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_Return, zoom,           {0} },
-	{ MODKEY,                       XK_Tab,    view,           {0} },
+	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } }, /* next window */
+	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } }, /* prev window */
+	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } }, /* resize, not useful */
+	{ MODKEY,                       XK_d,      incnmaster,     {.i = -1 } }, /* resize, not useful */
+	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} }, /* horizontal resize to left */
+	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} }, /* horizontal resize to the right */
+	{ MODKEY,                       XK_Return, zoom,           {0} }, /* not useful; cant figure out what it does */
+	{ MODKEY,                       XK_Tab,    view,           {0} }, /* not useful; cant figure out what it does */
 	{ MODKEY,                       XK_x,      killclient,     {0} },
 	{ MODKEY,                       XK_e,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
@@ -86,9 +86,9 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	TAGKEYS(                        XK_1,                      0)
-	TAGKEYS(                        XK_2,                      1)
-	TAGKEYS(                        XK_3,                      2)
+	TAGKEYS(                        XK_1,                      0) /* move to tag 0 */
+	TAGKEYS(                        XK_2,                      1) /* move to tag 1 */
+	TAGKEYS(                        XK_3,                      2) /* move to tag 2 */
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
 	TAGKEYS(                        XK_6,                      5)
