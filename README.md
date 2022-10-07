@@ -21,7 +21,7 @@ DWM uses Alt as modifier and many application uses Alt to access the menu. I bel
   - *x* would 'cut' the current window with the intention of 'pasting' it on another workspace with *p*. You could do several *x* in one go; *Enter* completes the action that will delete these windows on current workspace. It needs to be pasted using *p* onto another workspace or it will be gone for good.
   - *y* would 'yank' the current window with the intention of 'pasting' it on another workspace with *p*. Functionality is simmilar to that of *x*. The difference with *x* is that *x* would remove the window from that workspace whereas not so with *y*.
   - *s* would cycle you through occupied 'screens' (or monitor). 
-- *c* would exit/close (or delete as in vim) currently focused windows. Once closed, it could not be 'pasted' like in *x* or *y*
+  - *c* would exit/close (or delete as in vim) currently focused windows. Once closed, it could not be 'pasted' like in *x* or *y*
   - *m* would maximize/minimize (it is a toggle) the currently focused window. 
   - ' ' (*Space*) would activate dmenu to run aplications
   - '/' would allow you to search for a particular window by matching on the window title for the current workspace.  
