@@ -17,16 +17,16 @@ DWM uses Alt as modifier and many application uses Alt to access the menu. I bel
   -  jklh will move between windows without modifier.
   -  Alt-jklh will resize windows.
   -  Shift-jklh will move windows. Take note that "Shifting" is almost synonymous to "moving" and hence, easier to remember.
-  - "mark" windows using 'm', just like in vim. Any window that are marked together goes to the same *unused* workspace (or tags in DWM). *Enter* should be pressed when finished 'marking'; *Esc* to erase marked windows.
   - *TAB* would cycle you through the different workspace (or tags in DWM).   
-  - *x* would 'cut' the current window with the intention of 'pasting' it on another workspace with *p*. 
-  - *y* would 'yank' the current window with the intention of 'pasting' it on another workspace with *p*. The difference with *x* is that in *x* would remove the window from that workspace whereas not so with *y*.
+  - *x* would 'cut' the current window with the intention of 'pasting' it on another workspace with *p*. You could do several *x* in one go; *Enter* completes the action that will delete these windows on current workspace. It needs to be pasted using *p* onto another workspace or it will be gone for good.
+  - *y* would 'yank' the current window with the intention of 'pasting' it on another workspace with *p*. Functionality is simmilar to that of *x*. The difference with *x* is that *x* would remove the window from that workspace whereas not so with *y*.
   - *s* would cycle you through occupied 'screens' (or monitor). 
-  - *c* would exit/close (or delete as in vim) currently focused windows.
-  - *z* would zoom in/out (it is a zoom toggle) the currently focused window. 
+- *c* would exit/close (or delete as in vim) currently focused windows. Once closed, it could not be 'pasted' like in *x* or *y*
+  - *m* would maximize/minimize (it is a toggle) the currently focused window. 
   - ' ' (*Space*) would activate dmenu to run aplications
-  - '/' would allow you to search for a particular window by matching on the window title.  
-
+  - '/' would allow you to search for a particular window by matching on the window title for the current workspace.  
+  - Alt-/ would allow you to search for a particular window by matching on the window title for the all workspaces. The 'A' in Alt matches the 'A' in All - for memory aid.
+  
 __In general, anything you could do in *normal* mode can be done in *insert* mode by prepending the corresponding normal keys with *Win* modifier__
 This would make the keybindings very easy to remember.
 
