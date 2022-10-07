@@ -9,48 +9,25 @@ Display Manager inspired by vim/tmux, a fork of DWM by Suckless.org
 - Create a "Normal" mode, which applies to windows and an "Insert" mode that applies to contents of current window.
 
 # Why fork DWM?
-DWM uses Alt as modifier and many application uses Alt to access the menu. I believe this will create a lot of conflicts.
-I also find the key bindings of DWM hard to remember. While I could simply modify conf.h to suit my preferred keybindings,
-there are additional functionalities that I wish to include namely:
+DWM uses Alt as modifier and many application uses Alt to access the menu. I believe this will create a lot of conflicts. I also find the key bindings of DWM hard to remember. While I could simply modify conf.h to suit my preferred keybindings, there are additional functionalities that I wish to include namely:
 
 ## "Normal" mode that will apply to windows
-## You go into *Normal* mode by pressing Alt-TAB, which also simultaneously select the previously selected window, or 
-   pressing Caps-Lock, which is remapped and is no longer functioning as usual ##
+## You go into *Normal* mode by pressing Alt-TAB, which also simultaneously select the previously selected window, or by pressing Caps-Lock, which is remapped and is no longer functioning as usual ##
 
-When in normal mode, jklh will move between windows without modifier. You could access the same functionality while
-in "Insert" mode but using the windows button in addition to jklh
+  -  jklh will move between windows without modifier.
+  -  Alt-jklh will resize windows.
+  -  Shift-jklh will move windows. Take note that "Shifting" is almost synonymous to "moving" and hence, easier to remember.
+  - "mark" windows using 'm', just like in vim. Any window that are marked together goes to the same *unused* workspace (or tags in DWM). *Enter* should be pressed when finished 'marking'; *Esc* to erase marked windows.
+  - *TAB* would cycle you through the different workspace (or tags in DWM).   
+  - *x* would 'cut' the current window with the intention of 'pasting' it on another workspace with *p*. 
+  - *y* would 'yank' the current window with the intention of 'pasting' it on another workspace with *p*. The difference with *x* is that in *x* would remove the window from that workspace whereas not so with *y*.
+  - *s* would cycle you through occupied 'screens' (or monitor). 
+  - *c* would exit/close (or delete as in vim) currently focused windows.
+  - *z* would zoom in/out (it is a zoom toggle) the currently focused window. 
+  - ' ' (*Space*) would activate dmenu to run aplications
+  - '/' would allow you to search for a particular window by matching on the window title.  
 
-When in normal mode, Alt-jklh will resize windows. You could access the same functionality while
-in "Insert" mode but using the windows button in addition to Alt-jklh
-
-When in normal mode, Shift-jklh will move windows. Take note that "Shifting" is almost synonymous to "moving" and hence,
-easier to remember. You could access the same functionality while
-in "Insert" mode but using the windows button in addition to Shift-jklh
-
-When in normal mode, you could "mark" windows using 'm', just like in vim. Any window that are marked together goes to the same
-*unused* workspace (or tags in DWM). *Enter* should be pressed when finished 'marking'; *Esc* to erase marked windows.
-  
-When in normal mode, *TAB* would cycle you through the different workspace (or tags in DWM). When in insert mode, Win-Tab does
-the same thing.
-  
-When in normal mode, Win-x would delete the current workspace or tag. Ctrl-Win-x would accomplish same thing when in Insert mode
-  
-When in normal mode, 's' would cycle you through the different 'screens' (or monitor). When in insert mode, Win-s does
-the same thing.
-  
-When in normal mode, 'x' would exit/close (or delete as in vim) currently focused windows. When in insert mode, Win-x does
-the same thing.
-
-When in normal mode, 'z' would zoom in/out (it is a zoom toggle) the currently focused window. When in insert mode, Win-z does
-the same thing. 
-
-When in normal mode, ' ' (*Space*) would activate dmenu to run aplications When in insert mode, Win-*Space* does
-the same thing. 
-
-When in normal mode, '/' would allow you to search for a particular window by matching on the window title. When in insert mode, Win-/ does
-the same thing. 
-
-__In general, anything you could do in normal mode can be done in insert mode by prepending the corresponding normal keys with Win modifier__
+__In general, anything you could do in *normal* mode can be done in *insert* mode by prepending the corresponding normal keys with *Win* modifier__
 This would make the keybindings very easy to remember.
 
 ## You exit the "Normal" mode and enter the "Insert" mode by pressing *Enter* on a currently selected window. ##
