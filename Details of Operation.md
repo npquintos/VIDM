@@ -8,6 +8,7 @@
   
   ## Normal Mode
  - jkhl --> (navigate) move to the next window. That window will be momentarily be in focus to show contents but will not stay there unless **Enter** is pressed. In that way, the previously visible window is not clobbered.
+ - <Shift> hl --> (navigate) move to the next tag. <Shift> is used to be similar to AstroNvim when moving from tab to tab. Tab is similar to tags.
  - x    --> (delete) mark focused window for moving; insert window pointer to  **win_for_moving** array. Pressing x twice over the same window will undo the selection.
  - y    --> (yank) mark focused window for copying; insert window pointer to  **win_for_copying** array. Pressing y twice over the same window will undo the selection.
  - p    --> (paste) copy windows stored in win_for_copying array and move windows stored in win_for_moving array to currently focused tag. Delete the contents of both win_for_moving and win_for_copying. You are still in Normal mode after this operation. If the currently selected tag has windows in it, the copied and moved windows will simply be added to the existing ones. If p is pressed without going to a different tag, no change will happen.
