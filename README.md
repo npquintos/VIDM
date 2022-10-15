@@ -16,7 +16,8 @@ DWM uses Alt as modifier and many application uses Alt to access the menu. I bel
 
   -  jklh will move between windows without modifier.
   -  Alt-jklh will resize windows.
-  -  Shift-jklh will move windows. Take note that "Shifting" is almost synonymous to "moving" and hence, easier to remember.
+  -  Ctrl - jklh will move window position.
+  -  Shift-lh will move from tag to tag - similar to AstroNvim key binding when going from tab to tab and tags are similar to tabs.
   - *TAB* would cycle you through the different workspace (or tags in DWM).   
   - *x* would 'cut' the current window with the intention of 'pasting' it on another workspace with *p*. You could do several *x* in one go; *Enter* completes the action that will delete these windows on current workspace. It needs to be pasted using *p* onto another workspace or it will be gone for good.
   - *y* would 'yank' the current window with the intention of 'pasting' it on another workspace with *p*. Functionality is simmilar to that of *x*. The difference with *x* is that *x* would remove the window from that workspace whereas not so with *y*.
