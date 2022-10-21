@@ -55,7 +55,16 @@ void close_x() {
 }
 
 // this call will allow us to receive input events
-/* only Expose, ButtonPress and KeyPress events are regarded as valid. The Expose event type refers to when a portion of the window which had been obscured by another window becomes visisble again. This is usually handled by some sort of user routine to repaint the window. Note: the redraws must be handle by the user! The below example assumes a routine redraw() has been written. Also notice how the KeyPress event is handled. Pressing a 'q' will exit the program. */
+/* only Expose, ButtonPress and KeyPress events are regarded as valid. The Expose event type refers to when a portion of the window 
+which had been obscured by another window becomes visisble again. This is usually handled by some sort of user routine to repaint the window.
+Note: the redraws must be handle by the user! The below example assumes a routine redraw() has been written. Also notice how the KeyPress
+event is handled. Pressing a 'q' will exit the program.
+There are a lot of Event types and masks. Read the man pages on: XSelectInput and XNextEvent for more information. 
+Also see /usr/include/X11 and search for NoEventMask. This will give you a complete list of all the different sorts of events there are.
+It is worth noting that XNextEvent will block until another event comes through. So if no events occur, your program just sits there. 
+XCheckWindowEvent is similar to XNextEvent (though it takes different arguments), but it returns a true (1) or a false (0) about whether or not 
+an event occured. If an event did occur it fills an XEvent structure with info about the event. In either case, the program execution continues unabated.
+*/
 
 XSelectInput(dis, win, ExposureMask|ButtonPressMask|KeyPressMask);
 
